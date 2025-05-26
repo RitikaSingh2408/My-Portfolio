@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#container{
+   width: 100%;
+   height: 100vh;
+   background: white;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 10000;
+}
+
+#page_cover{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,104,0.5) 0%, rgba(225,0,255,0.15458683473389356) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+#profile_box{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 15px;
+    padding:50px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#profile_pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border:5px solid white;
+    box-shadow: 0px 0px 10px #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+#profile_icon{
+    font-size: 120px;
+    color:#ccc;
+    position: absolute;
+    top:25px;
+    left:50%;
+    transform: translate(-50%);
+}
+
+#profile_upload{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+#upp{
+    font-size: 23px;
+    color: gray;
+    font-family: 'Ubuntu',sans-serif;
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+
+#profile_name{
+font-family: 'Ubuntu',sans-serif;
+}
+
+#next{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:white;
+    font-family: "Ubuntu", sans-serif;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display:none;
+}
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,104,0.5) 0%, rgba(127,0,255,0.14898459383753504) 0%, rgba(225,0,255,0.1517857142857143) 100%);
+}
+#profile_header{
+    width: 100%;
+    height: 150px;
+    background-image: url("../images/cover_pic.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#profile_picture{
+    width: 160px;
+    height: 150px;
+    background-color: purple;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px #ccc;
+    position: absolute;
+    top:80px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#profile_username{
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+#app{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 52px;
+}
+
+@media(max-width:576px)
+{
+    #app{
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+#contact,#player,#logout{
+    width: 180px;
+    height: 150px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact:hover,#player:hover,#logout:hover{
+    width: 200px;
+    height: 170px;
+    box-shadow: 0px 0px 15px #ccc;
+    transition: 0.5s;
+    cursor: pointer;
+}
+ #contact i,#player i,#logout i{
+    font-size: 45px;
+    color: purple;
+ }
+   
+
+ #contact p,#player p,#logout p{
+    font-size: 25px;
+    color: purple;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 7px;
+ }
+
+ #profile_footer{
+    width: 100%;
+    height: 67px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+ }
+
+ #profile_footer p{
+   color: white;
+   font-family: 'Ubuntu',sans-serif;
+   font-size: 20px;
+
+ }
